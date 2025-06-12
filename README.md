@@ -35,5 +35,4 @@ This webpage acts as the **homepage** of a DJ/music artist showcase. Each artist
 - CSS3  
 - JavaScript (optional for audio control or future enhancements)
 
-## 🗂️ Project Structure
 
