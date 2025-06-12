@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    text-decoration: none;
+    text-align: justify;
+}
+
+body {
+    background-image:url("img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.player-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#play-pause {
+    border-radius: 10%;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+}
+
+#play-pause:hover {
+    background-color: #2980b9;
+}
+
+#volume {
+    width: 100%;
+}
+header, footer{
+    background-color: rgb(54, 21, 80);
+    padding: 1em;
+    border: 1px solid;
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+header h2{
+    margin: auto;
+}
+
+header nav{
+    background-color: tomato;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid black;
+    flex-basis: 100%;
+}
+header nav a{
+    color: white;
+    padding: 1em;
+    text-transform: uppercase;
+   
+    justify-content: space-around;
+}
+header nav a:hover{
+    background-color: goldenrod;
+    
+}
+
+footer {
+    padding: 1.5em 0;
+    bottom: 0;
+    text-decoration:solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+    position: fixed;
+    text-align: center; /* Centra el contenido del footer horizontalmente */
+    padding: 20px; /* Espaciado interior del footer */
+    position: fixed; /* Fija el footer en la parte inferior de la ventana */
+    left: 0; /* Fija el footer a la izquierda de la ventana */
+    right: 0; /* Fija el footer a la derecha de la ventana */
+    bottom: 0; 
+}
+footer .Lewis {
+  color: white;
+  margin: auto;
+  padding-left: 3em;
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+footer .so{
+    margin-left: 50px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    border-radius: 5%;
+    background-color: orange;
+    color:white;
+    padding: 0.5em;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Audio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="reproductor.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2><img src="img/logo.png" alt="EHDOTON logo"></h2>
+            <nav>
+                <a href="Inicio.html">inicio</a>
+                <a href="Musica.html">musica</a>
+                <a href="tienda.html">tienda</a>
+            </nav>
+    </div>
+    <div class="player-container">
+        <audio id="audio" controls>
+            <source src="https://soundcloud.com/luis-octavio-calder-n/warp-top-speed" type="audio/mpeg">
+        </audio>
+        <div class="controls">
+            <button id="play-pause">Play</button>
+            <input id="volume" type="range" min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+    <footer>
+        <div class="Lewis">
+            <div class="in"><a href="https://instagram.com/lewis_coleman.m?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa fa-instagram"></i> Lewis Coleman  </a></div>
+        <div class="so"><a href="https://on.soundcloud.com/au7j5JryR8hZmWtcA" target="_blank"><i class="fa fa-soundcloud"></i> Lewis Coleman</a></div>
+        </div>     
+    </footer>
+    <script src="reproductor.js"></script>
+</body>
+</html>

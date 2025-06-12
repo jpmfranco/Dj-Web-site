@@ -1,0 +1,138 @@
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var'; }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: justify;
+}
+
+body{
+    background-image:url("img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    margin: auto;
+    max-width: 1200px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.IMG{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    
+}
+header, footer{
+    background-color: rgb(54, 21, 80);
+    padding: 1em;
+    border: 1px solid;
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+header h2{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 10%;
+}
+
+header nav{
+    background-color: tomato;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid black;
+    flex-basis: 100%;
+}
+header nav a{
+    color: white;
+    padding: 1em;
+    text-transform: uppercase;
+   
+    justify-content: space-around;
+}
+header nav a:hover{
+    background-color: goldenrod;
+    
+}
+section{
+    background-color: white;
+    border: 1px solid ;
+    padding: 2em;
+    flex: 100%;
+    margin-bottom: 1.5em;
+}
+section p, section hr, section h1{
+    margin-bottom: 1em;
+}
+aside{
+    background-color: tomato;
+    flex: 100%;
+    margin-bottom: 3em;
+}
+aside p{
+    background-color: gold;
+    margin: 1em;
+    padding: 1em;
+}
+
+footer {
+    padding: 1.5em 0;
+    bottom: 0;
+    text-decoration:solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 100%
+}
+footer .Lewis {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+footer .so{
+    margin-left: 50px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    border-radius: 5%;
+    background-color: orange;
+    color:white;
+    padding: 0.5em;
+}
+
+@media (max-width: 760px){
+    .container{
+        flex-direction: column;
+    }
+    header{
+        margin: 0;
+        padding: 0;
+
+        justify-content: center;
+    }
+    header nav{
+        flex-basis: 100%;
+    }
+    h2{
+        padding: 1.5em 0;
+    }
+}

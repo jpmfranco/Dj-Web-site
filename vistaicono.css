@@ -1,0 +1,153 @@
+@supports (font-variation-settings: normal) {
+    :root { font-family: 'Inter var', sans-serif; }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: justify;
+}
+
+
+.Por1 p{
+    color: black;
+    background-color: white;
+    text-align: center;
+    border-radius: 5%;
+    padding: auto;
+}
+.Por1 p img{
+    border-radius: 20%;
+}
+
+.alb{
+    color: white;
+}
+body{
+    background-image:url("img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header, footer{
+    background-color: rgb(54, 21, 80);
+    padding: 2em;
+    border: 1px solid;
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+header nav{
+    background-color: tomato;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    flex-basis: 100%;
+}
+header nav a{
+    color: white;
+    padding: 1em;
+    text-transform: uppercase;
+   
+    justify-content: space-around;
+}
+header nav a:hover{
+    background-color: goldenrod;
+    
+}
+section{
+    margin:2em;
+    border-color: black;
+    background-color: rgb(30, 2, 39);
+    border: 1px solid ;
+    padding: 2em;
+    margin-bottom: 1.5em;
+    font-size: 15px;
+}
+section h1{
+    color: white;
+    text-align: center;
+    padding-bottom: 3em;
+}
+section h2{
+    margin-left: 50px;
+}
+
+.Por1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+     
+   
+}
+
+section h4{
+    width: calc(25% - 20px); /* Ajusta el ancho para cuatro grupos por fila */
+    margin: 5px;
+    padding: auto;
+    text-align: center;
+}
+section h5{
+    color: white;
+    text-align: right;
+
+}
+section  button{
+    width: 2%;
+}
+section button:hover{
+    background-color: rgb(201, 188, 188);
+}
+section h5 img{
+    width: 100%;
+
+}
+section .Por1 img{
+        width: auto;
+}
+
+footer {
+    padding: 1.5em 0;
+    bottom: 0;
+    text-decoration:solid;
+    justify-content: center;
+    flex: 100%
+}
+
+footer .Lewis {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+footer .so{
+    margin-left: 50px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+ }
+footer i{
+color: black;
+background-color: white;
+border-radius: 40%;
+padding: .2em;
+
+}
+footer a:hover,footer i:hover{
+    border-radius: 5%;
+    background-color: orange;
+    color:white;
+    padding: 0.5em;
+}
