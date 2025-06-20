@@ -2,6 +2,7 @@
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var'; }
 }
+/* -------------- Principal Styles --------------------*/
 
 *{
     margin: 0;
@@ -35,6 +36,7 @@ header, footer{
     flex-flow: row wrap;
     justify-content: space-between;
 }
+/* -------------- Header --------------------*/
 
 header{
     margin: auto;
@@ -65,8 +67,9 @@ header nav a{
 }
 header nav a:hover{
     background-color: goldenrod;
-    
+
 }
+/* -------------- Section --------------------*/
 section{
     background-color: white;
     border: 1px solid ;
@@ -77,6 +80,7 @@ section{
 section p, section hr, section h1{
     margin-bottom: 1em;
 }
+/* -------------- aside --------------------*/
 aside{
     background-color: tomato;
     flex: 100%;
@@ -87,7 +91,7 @@ aside p{
     margin: 1em;
     padding: 1em;
 }
-
+/* -------------- Footer --------------------*/
 footer {
     padding: 1.5em 0;
     bottom: 0;
@@ -116,7 +120,7 @@ footer a:hover{
     color:white;
     padding: 0.5em;
 }
-
+/* -------------- smartphone changes --------------------*/
 @media (max-width: 760px){
     .container{
         flex-direction: column;
