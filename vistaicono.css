@@ -9,7 +9,14 @@
     text-decoration: none;
     text-align: justify;
 }
-
+.container{
+    margin: auto;
+    max-width: 1200px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
 .Por1 p{
     color: black;
@@ -40,19 +47,24 @@ header, footer{
     justify-content: center;
     align-items: center;
 }
-header img{
+header{
+    margin: auto;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
-
+    text-align: center;
+    width: 10%;
+}
+header .IMG{
+    padding-bottom: 20px;
+    
 }
 header nav{
     background-color: tomato;
     padding: 1em;
-    margin-bottom: 1.5em;
-    justify-content: center;
     text-align: center;
     border: 1px solid black;
+    border-radius: 100px;
     flex-basis: 100%;
 }
 header nav a{
