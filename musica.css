@@ -3,7 +3,7 @@
   :root { font-family: 'Inter var', sans-serif; }
 }
 
-  
+/* ------------| General|------------- */
 *{
     margin: 0;
     padding: 0;
@@ -11,9 +11,7 @@
     text-decoration: none;
     text-align: left;
 }
-.can img{
-    border-radius: 25%;
-}
+
 body{
     background-image:url("img/fondo.jpg");
     background-repeat: no-repeat;
@@ -28,30 +26,29 @@ body{
     flex-wrap: wrap;
     
 }
-header, footer{
-    background-color: rgb(54, 21, 80);
+
+/* ------------| header|------------- */
+
+header, footer,section,.title-div{
+    background-color: #240543;
     padding: 1em;
     border: 1px solid;
-    align-items: center;
     display: flex;
     flex-basis: 100%;
     flex-flow: row wrap;
-    justify-content: space-between;
 }
 header{
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 10%;
 }
 header .IMG{
     padding-bottom: 20px;
     
 }
 header nav{
-    background-color: tomato;
+    background-color: #b49acf ;
     padding: 1em;
     text-align: center;
     border: 1px solid black;
@@ -66,21 +63,39 @@ header nav a{
     justify-content: space-around;
 }
 header nav a:hover{
-    background-color: goldenrod;
+    background-color: #4e56b6 ;
     
 }
-section{
-    background-color: white;
-    border: 1px solid ;
-    padding: .5em;
-    flex: 100%;
-    margin-bottom: 1.5em;
+/* ------------| Section|------------- */
 
-    font-size: 15px;
+section {
+    background-color: #adb2f1 ;
+    margin: 10px 0 10px 0;
 }
-section h1{
+.body-container{
+   display: flex;
+   justify-content: center;
+   
+} 
+.title-div{
+    background-color: #090f57 ;
+    color:beige;
+    border-color: black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.title-div h1{
     text-align: center;
-    padding-bottom: 3em;
+}
+.img-iconos{
+    font-size: 14px;
+}
+.img-iconos img{
+    width: 8%;
+}
+section .img-iconos,h5{
+    text-align: right;
 }
 section h2{
     margin-left: 50px;
@@ -92,39 +107,6 @@ section p{
    margin-left: 125px;
 }
 section h4 img{
-        width: 10%;
-}
-section h5{
-    margin-left: 1000px;
-}
-section button{
-    width: 10%;
-}
-section button:hover{
-    background-color: rgb(201, 188, 188);
-}
-section button img{
-    width: 100%;
-}
-footer {
-    padding: 1.5em 0;
-    bottom: 0;
-    text-decoration:solid;
-    justify-content: center;
-    flex: 100%
-}
-
-footer img{
-    
-    width: 10%;
-}
-
-footer a{
-    color: white;
-    text-decoration: none;
-}
-footer a:hover{
-    background-color: orange;
-    color:white;
-    padding: 0.5em;
+        width: 40%;
+        border-radius: 20%;
 }

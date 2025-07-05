@@ -25,21 +25,31 @@
         <section>
             <h1>About us</h1>
             <p>
-                -purpose
-                -kind of genres of music</p>
+                Meet four rising names in the electronic scene. Mustanen delivers immersive sets blending melodic techno and deep house with emotional depth. Dreyko brings raw energy through bass-heavy drops and genre-bending transitions, keeping the crowd on edge. Navyot crafts futuristic atmospheres with experimental sounds and hypnotic rhythms, perfect for underground sessions. And Suner brings the heat with vibrant house and progressive beats that light up any dance floor.</p>
                 <hr>
             <p></p>
         </section>
         <aside>
             <div class="aside">
             <script>
+                let artist1 = ["Mustanen","Dreyko","Navyot","Suner"];
+                let descri = ["brings cosmic energy to the dance floor, blending deep house and progressive beats that take the crowd on a journey through sound.",
+                              "lights up the night with explosive EDM drops and high-energy remixes, keeping the party alive until sunrise.",
+                               "mixes smooth lo-fi vibes with dreamy synths, perfect for chill sessions and late-night grooves under the stars.",
+                               "spins a fusion of techno and industrial basslines, creating an underground atmosphere that pulls dancers into a hypnotic trance." 
+                                ]
                 var artist = 4;
                 var i = 0;
-
-                for (i = 0; i < artist; i++) {
-                    document.getElementsByClassName("aside")[0].innerHTML += "<p>Artist</p>";
-                    document.getElementsByClassName("aside")[0].innerHTML += "<p>Description</p>";
-                }
+                let par = "<h3>";
+                let par2 = "<p>"
+                for (let a = 0;a<artist;a++){
+                        par += artist1[a] +"<br>";
+                        par2 += descri[a]+"<br>"
+                        document.getElementsByClassName("aside")[0].innerHTML += par;
+                        document.getElementsByClassName("aside")[0].innerHTML += par2;
+                        par = "<h3>"
+                        par2 = "<p>"
+                    }
 
             </script>
             </div>

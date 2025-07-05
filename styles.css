@@ -28,9 +28,10 @@ body{
 }
 
 header, footer{
-    background-color: rgb(54, 21, 80);
+    background-color: #240543;
     padding: 1em;
     border: 1px solid;
+    align-items: center;
     display: flex;
     flex-basis: 100%;
     flex-flow: row wrap;
@@ -51,7 +52,7 @@ header .IMG{
     
 }
 header nav{
-    background-color: tomato;
+    background-color: #b49acf ;
     padding: 1em;
     text-align: center;
     border: 1px solid black;
@@ -66,13 +67,15 @@ header nav a{
     justify-content: space-around;
 }
 header nav a:hover{
-    background-color: goldenrod;
+    background-color: #4e56b6 ;
 
 }
 /* -------------- Section --------------------*/
 section{
-    background-color: white;
+    background-color: #a1e2e5 ;
     border: 1px solid ;
+    border-radius: 10px;
+    
     padding: 2em;
     flex: 100%;
     margin-bottom: 1.5em;
@@ -80,16 +83,25 @@ section{
 section p, section hr, section h1{
     margin-bottom: 1em;
 }
+.img-iconos img{
+    width: 8%;
+}
+section .img-iconos{
+    text-align: right;
+}
 /* -------------- aside --------------------*/
 aside{
-    background-color: tomato;
+    background-color: #141b72 ;
     flex: 100%;
     margin-bottom: 3em;
+    color: #e6e8fd ;
+    border-radius: 10px;
 }
-aside p{
-    background-color: gold;
+aside p,aside h3{
+    background-color: #425def ;
     margin: 1em;
     padding: 1em;
+
 }
 /* -------------- Footer --------------------*/
 footer {
