@@ -46,6 +46,8 @@ header{
     align-items: center;
     text-align: center;
     width: 10%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 header .IMG{
     padding-bottom: 20px;
@@ -94,13 +96,17 @@ aside{
     background-color: #141b72 ;
     flex: 100%;
     margin-bottom: 3em;
-    color: #e6e8fd ;
+    color: white ;
     border-radius: 10px;
 }
 aside p,aside h3{
     background-color: #425def ;
     margin: 1em;
     padding: 1em;
+}
+aside h3{
+    color:#b4e895 ;
+    font-weight: bold;
 
 }
 /* -------------- Footer --------------------*/
@@ -111,7 +117,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 100%
+    flex: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 }
 footer .Lewis {
   margin: auto;

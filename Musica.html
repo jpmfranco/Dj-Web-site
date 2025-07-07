@@ -33,36 +33,37 @@
                     
                     <div class="body-container">
                         <div class="can">
+                            <h2>Lewis Coleman</h2>
                             <script>
                                 let artist1 = ["Mustanen","Dreyko","Navyot","Suner"];
                                 let Prevol1 = ["714 (Unfinished)","Agusta MV (Unfinished)","An Afternon With A Trophy (Unfinished)","Bolide (Unfinished)","Das Superauto (Unfinished)"]
                                 let Prevol2 = ["Internal Advance (Unfinished)","No limits On The Track (Unfinished)","Nothing (Unfinished)","Beast 3 12 T3 (Unfinished)","Disastrous Victory (Unfinished)"]
-                                let CanMus = [Prevol1,Prevol2]
+                                let CanMus = ["-Pre-Releases (Unfinished)","-Pre-Releases (Unfinished)Vol. 2  "]
+                                let IMGmus = ['<h4><img src="img/logo portada.png" >',"<h4><img src='img/logo portada 2.png' >"]
                                 let CanNavy = []
                                 let CanSuner = []
-                                while(i<artist1.length()){
-                                    document.getElementsByClassName("can")[0].innerHTML += "<p>Description</p>";
+                                var par = "<h4>"
+                                var par2 = "<p>"
+                                for (let a = 0; a < CanMus.length; a++) {
+                                    // Crear contenido de título e imagen
+                                    let header = `<h4>${CanMus[a]}</h4>`;
+                                    let img = IMGmus[a];
+                                    document.getElementsByClassName("can")[0].innerHTML +=  img+header ;
 
+                                    // Crear lista de canciones
+                                    let songList = "<p>";
+                                    let currentList = a === 0 ? Prevol1 : Prevol2;
+                                    for (let i = 0; i < currentList.length; i++) {
+                                        songList += currentList[i] + "<br>";
+                                    }
+                                    songList += "</p>";
+
+                                    document.getElementsByClassName("can")[0].innerHTML += songList;
                                 }
-                                document.getElementsByClassName("can")[0].innerHTML += "<p>Description</p>";
+                                
 
                             </script>
-                            <h2>Lewis Coleman</h2>
-                                <h4><img src="img/logo portada 2.png" ></h4>
-                                <h4>-Pre-Releases (Unfinished)  </h4>
-                                    <p>1-714 (Unfinished)</p>
-                                    <p>2-Agusta MV (Unfinished)</p>
-                                    <p>3-An Afternon With A Trophy (Unfinished)</p>
-                                    <p>4-Bolide (Unfinished)</p>
-                                    <p>5-Das Superauto (Unfinished)</p>
-                            
-                                <h4><img src="img/logo portada.png" ></h4>
-                                <h4>-Pre-Releases (Unfinished)Vol. 2  </h4>
-                                    <p>1-Internal Advance (Unfinished)</p>
-                                    <p>2-No limits On The Track (Unfinished)</p>
-                                    <p>3-Nothing (Unfinished)</p>
-                                    <p>4-Beast 3 12 T3 (Unfinished)</p>
-                                    <p>5-Disastrous Victory (Unfinished)</p>
+                               
                         </div>
                         <div class="img-iconos">
                                 <h5>Vistas:</h5>
